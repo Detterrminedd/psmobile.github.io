@@ -5,164 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/css/stylesheet.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .icons{
-        padding: 0.5em;
-        
-      }
-      .container {
-        transform-style: preserve-3d;
-        perspective: 100px;
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      .title {
-        width: 20em;
-      }
-
-      @keyframes rotateAnimation {
-        from {
-          transform: rotateY(110deg);
-        }
-        to {
-          transform: rotateY(125deg);
-        }
-      }
-      .first {
-        background: url(caveman.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-        background-attachment: fixed;
-        height: 100vh;
-        width: 100vw;
-        opacity: 1;
-        color: #fff;
-      }
-      .second {
-        background: url(village.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-        height: 100vh;
-        width: 100vw;
-      }
-      .third {
-        background: url(dance.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-        background-attachment: fixed;
-        height: 100vh;
-        width: 100vw;
-      }
-      .fourth {
-        background: url(newspaper.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-        height: 100vh;
-        width: 100vw;
-      }
-      .fifth {
-        background: url(television.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-        background-attachment: fixed;
-        height: 100vh;
-        width: 100vw;
-      }
-      .sixth {
-        background: url(computer.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom;
-        height: 100vh;
-        width: 100vw;
-      }
-      .firsttext {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        font-size: 1.2em;
-        font-family: "Bangers", cursive;
-        text-align: justify;
-        width: 90%;
-        background-color: gray;
-        border: 1px solid black;
-        padding: 0.4em;
-        border-radius: 0.5em;
-        color: black;
-      }
-      .secondtext {
-        position: absolute;
-        top: 132vh;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        font-size: 1em;
-        font-family: "Bangers", cursive;
-        text-align: justify;
-        width: 90%;
-        padding: 0.4em;
-        border-radius: 0.5em;
-        background-color: gray;
-        border: 1px solid black;
-        padding: 0.4em;
-        border-radius: 0.5em;
-        color: black;
-      }
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="first">
+    <div class="master master-bg first">
       <div class="icons">
-        <img src="/linkedin.png" alt="">
-        <img src="/facebook.png" alt="">
-        <img src="/instagram.png" alt="">
+        <img src="/assets/images/linkedin.png" alt="" />
+        <img src="/assets/images/facebook.png" alt="" />
+        <img src="/assets/images/instagram.png" alt="" />
       </div>
       <div class="container">
-        <img class="title" src="/title.jpeg" alt="" />
+        <img
+          class="title"
+          src="/assets/images/title.jpeg"
+        />
       </div>
-      <p class="firsttext">
+      <p class="firsttext opacity1">
         Our Great ancestors used stone, clay, wood to communicate stories about
         Life and survival.
       </p>
     </div>
 
-    <div class="second">
-      <p class="secondtext">
+    <div class="master master-bg second">
+      <p class="firsttext opacity4">
         Stories are something we connect with emotionally. Storytelling is one
         the best understood mediums.
       </p>
     </div>
-    <div class="third"></div>
-    <div class="fourth"></div>
-    <div class="fifth"></div>
-    <div class="sixth"></div>
-
-    <script type="text/javascript" src="/cdn.js"></script>
+    <div class="master master-bg third">
+      <p class="firsttext opacity7">
+        Stories are something we connect with emotionally. Storytelling is one
+        the best understood mediums.
+      </p>
+    </div>
+    <div class="master master-bg fourth">
+      <p class="firsttext opacity11">
+        Stories are something we connect with emotionally. Storytelling is one
+        the best understood mediums.
+      </p>
+    </div>
+    <div class="master master-bg fifth">
+      <p class="firsttext opacity13">
+        Stories are something we connect with emotionally. Storytelling is one
+        the best understood mediums.
+      </p>
+    </div>
+    <div class="master master-bg sixth">
+      <p class="firsttext opacity17">
+        Stories are something we connect with emotionally. Storytelling is one
+        the best understood mediums.
+      </p>
+    </div>
+    <script type="text/javascript" src="/javascript/cdn.js"></script>
+    <script type="text/javascript" src="/javascript/transition.js"></script>
     <script>
-      $(window).scroll(function () {
-        $(".firsttext").css("opacity", 1 - $(window).scrollTop() / 500);
-      });
-
-      $(window).scroll(function () {
-        $(".secondtext").css("opacity", 1 - $(window).scrollTop() / 2000);
-      });
-
       let title = document.querySelector(".title");
 
       window.addEventListener("scroll", () => {
@@ -170,6 +73,67 @@
         title.style.transform = "rotate3d(0,1,0, " + top + "deg)";
       });
     </script>
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p>
+              Sample text-Stories are something we connect with emotionally. Storytelling is one
+        the best understood mediums.
+            </p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>0987654321</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">Our Services</div>
+          <div><a href="#">Propelling Stories</a></div>
+          <div><a href="#">CXO Branding</a></div>
+          <div><a href="#">Mentoons</a></div>
+          <div><a href="#">Career guidance</a></div>
+          <div><a href="#">SocailMedia management</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">To Know more</div>
+          <form action="#">
+            <input type="submit" name="" value="Click here">
+            <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Copyright © 2020 <a href="#">Mentor Mahesh</a> All rights reserved</p>
+      </div>
+    </footer>
+   
   </body>
 </html>
 
+<!-- <div class="icons">
+  <img src="/assets/images/linkedin.png" alt="" />
+  <img src="/assets/images/facebook.png" alt="" />
+  <img src="/assets/images/instagram.png" alt="" />
+</div>
+<div class="container">
+  <img
+    class="title"
+    src="/assets/images/title.jpeg"
+    data-tilt
+    data-tilt-max="10"
+    data-tilt-speed="100"
+  />
+</div> -->
