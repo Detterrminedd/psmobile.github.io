@@ -11,15 +11,15 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-  $(".opacity11").css("opacity", 10 - $(window).scrollTop() / 250);
+  $(".opacity11").css("opacity", 9.7 - $(window).scrollTop() / 250);
 });
 
 $(window).scroll(function(){
-  $(".opacity13").css("opacity", 13 - $(window).scrollTop() / 250);
+  $(".opacity13").css("opacity", 14.3 - $(window).scrollTop() / 250);
 });
 
 $(window).scroll(function(){
-  $(".opacity17").css("opacity", 16 - $(window).scrollTop() / 250);
+  $(".opacity17").css("opacity", 17.5 - $(window).scrollTop() / 250);
 });
 // title
 let title = document.querySelector(".title");
