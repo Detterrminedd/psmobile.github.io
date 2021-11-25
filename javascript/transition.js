@@ -15,11 +15,11 @@ $(window).scroll(function(){
 });
 
 $(window).scroll(function(){
-  $(".opacity13").css("opacity", 14.3 - $(window).scrollTop() / 250);
+  $(".opacity13").css("opacity", 13.3 - $(window).scrollTop() / 250);
 });
 
 $(window).scroll(function(){
-  $(".opacity17").css("opacity", 17.5 - $(window).scrollTop() / 250);
+  $(".opacity17").css("opacity", 16.5 - $(window).scrollTop() / 250);
 });
 // title
 let title = document.querySelector(".title");
