@@ -178,7 +178,7 @@ footer a:hover{
   place-items: center;
 }
 .master:nth-child(1) { 
-  background: url(/assets/images/caveman.png);
+  background: url(../assets/images/caveman.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,7 +188,7 @@ footer a:hover{
   padding-top: 4.2em;
 }
 .master:nth-child(2) {
-  background: url(/assets/images/village.jpeg);
+  background: url(../assets/images/village.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -196,7 +196,7 @@ footer a:hover{
   width: 100vw;
 }
 .master:nth-child(3) {
-  background: url(/assets/images/dance.jpeg);
+  background: url(../assets/images/dance.jpeg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -205,7 +205,7 @@ footer a:hover{
   width: 100vw;
 }
 .master:nth-child(4) {
-  background: url(/assets/images/newspaper.jpeg);
+  background: url(../assets/images/newspaper.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -213,7 +213,7 @@ footer a:hover{
   width: 100vw;
 }
 .master:nth-child(5) {
-  background: url(/assets/images/television.jpeg);
+  background: url(../assets/images/television.jpeg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -222,7 +222,7 @@ footer a:hover{
   width: 100vw;
 }
 .master:nth-child(6) {
-  background: url(/assets/images/computer.jpeg);
+  background: url(../assets/images/computer.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
